@@ -34,7 +34,7 @@
 			$("#typeahead").typeahead({
 				source: function(query, process) {
 					$.ajax({
-						url: 'source.php',
+						url: 'connect.php',
 						type: 'POST',
 						data: 'query=' + query,
 						dataType: 'JSON',
