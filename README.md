@@ -1,5 +1,6 @@
-# Example Typeahead with Twitter Bootstrap
+# Example "Type-ahead"" with Twitter Bootstrap
 
 ---
 
-an example of a typeahead using twitter bootstrap, jquery, ajax, sql, and php
+An example of a typeahead using twitter bootstrap, jquery, ajax, sql, and php
+

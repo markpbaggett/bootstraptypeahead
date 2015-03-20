@@ -2,7 +2,7 @@
 
 	if (isset($_POST['query'])) {
 		//Connect to our database
-		mysql_connect("localhost", "root" , "root");
+		mysql_connect("localhost", "username" , "pw");
 		mysql_select_db("Bootstrap");
 
 		// Retrieve the query
