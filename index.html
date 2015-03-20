@@ -21,8 +21,31 @@
 	<link  rel="shortcut icon" href="">
 </head>
 <body>
+	<div class="well">
+		<input type="text" class="span3" id="typeahead" data-provide="typeahead">
+	</div>
+
 	<!-- Add JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+
+		<script>
+		$(function() {
+			$("#typeahead").typeahead({
+				source: function(query, process) {
+					$.ajax({
+						url: 'source.php',
+						type: 'POST',
+						data: 'query=' + query,
+						dataType: 'JSON',
+						async: true,
+						success: function(data) {
+							process(data);
+						}
+					});
+				}
+			});
+		});
+	</script>
 </body>
 </html>
