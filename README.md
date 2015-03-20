@@ -1,4 +1,4 @@
-# Example "Type-ahead"" with Twitter Bootstrap
+# Example "Type-ahead" with Twitter Bootstrap
 
 ---
 
